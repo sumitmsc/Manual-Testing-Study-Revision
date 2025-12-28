@@ -1,0 +1,187 @@
+
+# Software Testing Types – Online Food Delivery Application
+
+---
+## 📌 Overview
+This repository explains **Software Testing Types** using a real-world **Online Food Delivery Application**.
+Useful for **students, QA beginners, interviews, and training**.
+
+---
+## 🧩 Application Features
+- User Registration & Login
+- Restaurant Listing & Menu Browsing
+- Add to Cart
+- Apply Discount Coupons
+- Online Payment & Order Confirmation
+- Live Order Tracking
+- Admin Dashboard
+
+---
+## 1️⃣ Functional Testing
+**Scenarios**
+- User can register and login successfully
+- Food items added to cart update total correctly
+- Order placed successfully after payment
+- Live order tracking updates correctly
+- Admin can manage restaurants and orders
+
+---
+## 2️⃣ Unit Testing
+**Components**
+- Login authentication logic
+- Password validation
+- Cart price calculation
+- Coupon validation logic
+- Tax & delivery fee calculation
+- Order ID generation
+
+---
+## 3️⃣ Integration Testing
+**Modules**
+- Cart ↔ Payment
+- Payment ↔ Order Management
+- Order ↔ Notification Service
+- Menu ↔ Availability Service
+- Admin Dashboard ↔ Database
+
+---
+## 4️⃣ System Testing
+**End-to-End Scenario**
+1. User logs in
+2. Browses restaurants
+3. Adds items to cart
+4. Applies coupon
+5. Completes payment
+6. Receives order confirmation
+7. Tracks order live
+8. Admin dashboard updates
+
+---
+## 5️⃣ Regression Testing
+**New Feature:** Scheduled Delivery  
+**Regression Areas**
+- Immediate order flow
+- Cart calculation
+- Coupon logic
+- Payment processing
+- Order confirmation
+- Live tracking
+- Admin order management
+
+---
+## 6️⃣ User Acceptance Testing (UAT)
+**Who Performs**
+- Business stakeholders
+- Product owners
+- Selected end users
+
+**What to Validate**
+- Pricing accuracy
+- User experience
+- Delivery timelines
+- Payment handling
+- Business readiness
+
+---
+# 🎓 Student Assignment
+## Questions
+1. Identify 3 Functional Testing scenarios  
+2. List 5 Unit Testing components  
+3. Identify 3 Integration Testing modules  
+4. Describe one System Testing scenario  
+5. List Regression areas after Scheduled Delivery  
+6. Who performs UAT and why?
+
+## Evaluation Criteria
+- Correct mapping of testing types
+- Real-world relevance
+- Clear explanation
+
+---
+# 📝 MCQs (With Answers)
+
+**Q1. Cart total update testing belongs to?**  
+A. Unit  
+B. Functional  
+C. Regression  
+D. UAT  
+**Answer:** B
+
+**Q2. Coupon validation logic belongs to?**  
+A. System  
+B. Integration  
+C. Unit  
+D. UAT  
+**Answer:** C
+
+**Q3. End-to-end order flow is?**  
+A. Functional  
+B. Unit  
+C. System  
+D. Regression  
+**Answer:** C
+
+**Q4. Who performs UAT?**  
+A. Developers  
+B. Testers  
+C. Business users  
+D. Tools  
+**Answer:** C
+
+**Q5. Purpose of Regression Testing?**  
+A. UI improvement  
+B. Test new feature only  
+C. Ensure existing flow works  
+D. Remove defects  
+**Answer:** C
+
+---
+# 💬 Interview Q&A
+
+**Q1. Explain Functional Testing with example**  
+A: Login, add-to-cart, payment, order tracking.
+
+**Q2. What is Unit Testing here?**  
+A: Testing price calculation, coupon logic, login validation.
+
+**Q3. Integration Testing example**  
+A: Cart interacting with Payment and Order services.
+
+**Q4. What is System Testing?**  
+A: Full flow from login to delivery confirmation.
+
+**Q5. Why UAT is important?**  
+A: Confirms business and user expectations.
+
+---
+# 🧩 PlantUML Diagram
+```plantuml
+@startuml
+actor User
+actor Admin
+User -> App : Login / Register
+User -> App : Browse Restaurants
+User -> App : Add to Cart
+User -> App : Apply Coupon
+User -> Payment : Make Payment
+Payment -> App : Payment Status
+App -> User : Order Confirmation
+App -> User : Live Tracking
+Admin -> App : View Orders
+Admin -> App : Manage Restaurants
+@enduml
+```
+
+---
+# 🌐 GitHub Pages
+## Steps
+1. Keep this file as `README.md`
+2. Add `index.html` (optional landing page)
+3. Enable **GitHub Pages** from Repo Settings
+4. Site URL:
+```
+https://<username>.github.io/<repo-name>/
+```
+
+---
+⭐ If this repository helps you, give it a star!
