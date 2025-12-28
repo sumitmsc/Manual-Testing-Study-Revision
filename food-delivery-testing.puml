@@ -1,0 +1,17 @@
+
+@startuml
+actor User
+actor Admin
+
+User -> App : Login / Register
+User -> App : Browse Restaurants
+User -> App : Add to Cart
+User -> App : Apply Coupon
+User -> Payment : Make Payment
+Payment -> App : Payment Status
+App -> User : Order Confirmation
+App -> User : Live Tracking
+
+Admin -> App : View Orders
+Admin -> App : Manage Restaurants
+@enduml
